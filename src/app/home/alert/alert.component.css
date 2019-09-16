@@ -1,0 +1,27 @@
+mat-card {
+	background: #000000;
+	height: 100% !important;
+	margin-left: 2em;
+}
+mat-card-actions {
+	text-align: right;
+	padding-right: 0.2em;
+}
+button {
+	color: white;
+	font-weight: 900;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+td {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 1em;
+	margin: 2em;
+}
+
+b {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}

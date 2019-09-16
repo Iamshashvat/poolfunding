@@ -1,0 +1,11 @@
+
+<a [routerLink]="[ '/track']"><div id="map" style="width: 100%; height: 85vh;" ></div></a>
+
+<ul>
+    <li (click)="change('Map')">Map</li>
+
+
+    <div *ngIf="v=='Map'"><app-mapbox></app-mapbox></div>
+    <div *ngIf="v=='Sum'">Sum</div>
+    <div *ngIf="v=='Send'">Send</div>
+</ul>

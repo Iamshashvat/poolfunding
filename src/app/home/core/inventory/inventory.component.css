@@ -1,0 +1,26 @@
+.card{
+    border:none;
+    position:relative;
+    left:300px;
+}
+
+.add-button{
+    float: right;
+    background: #000000;
+    color: white;
+	margin-right: 2em;
+}
+.card-text{
+    position:relative;
+    left:400px;
+    top:-35px;
+    font-size:150%;
+    font-family:sans-serif;
+    font-weight: bold;
+    color:lightseagreen;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 150%;
+
+}

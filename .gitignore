@@ -1,0 +1,7 @@
+node_modules/*
+e2e/*
+tsconfig.app.json
+tsconfig.json
+tsconfig.specs.json
+karma.conf.js
+Dapps/node_modules/*

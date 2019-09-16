@@ -1,0 +1,16 @@
+
+
+<div class="container" *ngFor="let req of items; let j= index">
+    <div class="row mt-4" *ngFor="let item of req;let i=index ">
+        <div class="col-6" style="text-align: right;">
+            <span class="tilt">
+                <h6>{{itemName[j][i] |titlecase}}</h6>
+            </span>
+            <canvas baseChart [data]="item" [labels]="pieChartLabels" [chartType]="pieChartType"
+                [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors"
+                [legend]="pieChartLegend">
+            </canvas>
+        </div>
+        
+    </div>
+</div>
