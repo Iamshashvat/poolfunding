@@ -125,21 +125,7 @@ contract Project {
         return false;
     }
 
-    function getRefund() public inState(State.Expired) returns (bool) {
-        require(contributions[msg.sender] > 0);
-
-        uint amountToRefund = contributions[msg.sender];
-        contributions[msg.sender] = 0;
-
-        if (!msg.sender.send(amountToRefund)) {
-            contributions[msg.sender] = amountToRefund;
-            return false;
-        } else {
-            currentBalance = currentBalance.sub(amountToRefund);
-        }
-
-        return true;
-    }
+   
 
     function getDetails() public view returns 
     (

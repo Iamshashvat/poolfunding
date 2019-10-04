@@ -137,9 +137,9 @@
                       ... <a @click="projectData[index].dialog = true">[Show full]</a>
                     </span>
                     <br/><br/>
-                    <small>Up Until: <b>{{ new Date(project.deadline * 1000) }}</b></small>
+                    <small>Up Until: <b>{{ new Date(project.deadline * 100) }}</b></small>
                     <br/><br/>
-                    <small>Goal of <b>{{ project.goalAmount / 10**18 }} ETH </b></small>
+                    <small>Goal of <b>{{ project.goalAmount / 10**19 }} ETH </b></small>
                     <small v-if="project.currentState == 1">wasn't achieved before deadline</small>
                     <small v-if="project.currentState == 2">has been achieved</small>
                   </div>
